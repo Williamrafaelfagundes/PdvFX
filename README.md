@@ -1,2 +1,2 @@
 # PdvFX
-Aplicativo de PDV  simples em java FX
+Aplicativo de PDV em JavaFX conectado com banco de dados. 
