@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pdvfx.FXMLPDVController">
+    <children>
+        
+        <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0">
+            <left>
+                <VBox prefWidth="115.0" style="-fx-background-color: white;">
+                    <children>
+                        <Button fx:id="btnPDV" mnemonicParsing="false" prefHeight="68.0" prefWidth="115.0" text="PDV" />
+                        <Button fx:id="btnConfig" mnemonicParsing="false" prefHeight="68.0" prefWidth="115.0" text="CONFIG" />
+                        <Button fx:id="btnCadastro" mnemonicParsing="false" onAction="#irParaCadastro" prefHeight="68.0" prefWidth="115.0" text="CADASTRO" />
+                        <Button fx:id="btnVenda" mnemonicParsing="false" onAction="#abrirTelaVenda" prefHeight="68.0" prefWidth="115.0" text="VENDA" />
+                    </children>
+                </VBox>
+            </left>
+            <center>
+                <AnchorPane>
+                    <children>
+                        <Label alignment="CENTER" layoutX="336.0" layoutY="271.0" style="-fx-background-color: white;" text="PDV" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <font>
+                                <Font name="System Bold" size="52.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            </center>
+        </BorderPane>
+        
+        <Pane layoutX="-3.0" prefHeight="78.0" prefWidth="900.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        
+    </children>
+</AnchorPane>

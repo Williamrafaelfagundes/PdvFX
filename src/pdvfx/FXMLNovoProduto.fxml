@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pdvfx.FXMLNovoProdutoController">
+    <children>
+        <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0">
+            <left>
+                <VBox prefWidth="115.0">
+                    <children>
+                        <Button fx:id="btnPDV" mnemonicParsing="false" onAction="#irParaTelaPDV" prefHeight="68.0" prefWidth="115.0" text="PDV" />
+                        <Button fx:id="btnConfig" mnemonicParsing="false" prefHeight="68.0" prefWidth="115.0" text="CONFIG" />
+                        <Button fx:id="btnCadastro" mnemonicParsing="false" prefHeight="68.0" prefWidth="115.0" text="CADASTRO" />
+                        <Button fx:id="btnVenda" mnemonicParsing="false" onAction="#abrirTelaVenda" prefHeight="68.0" prefWidth="115.0" text="VENDA" />
+                    </children>
+                </VBox>
+            </left>
+            <center>
+                <StackPane BorderPane.alignment="CENTER">
+                    <children>
+                        <Pane prefHeight="400.0" prefWidth="600.0">
+                            <children>
+                                <TextField fx:id="inputValorDeVenda" layoutX="232.0" layoutY="217.0" prefHeight="25.0" prefWidth="160.0" />
+                                <TextField fx:id="inputNomeProduto" layoutX="232.0" layoutY="151.0" prefHeight="25.0" prefWidth="330.0" />
+                                <Button fx:id="btnVoltar" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#voltarParaTelaCadastro" prefHeight="25.0" prefWidth="104.0" text="Voltar" />
+                                <Button fx:id="btnSalvar" layoutX="239.0" layoutY="276.0" mnemonicParsing="false" onAction="#salvarProduto" prefHeight="25.0" prefWidth="177.0" text="Salvar" />
+                                <Label layoutX="234.0" layoutY="134.0" prefHeight="17.0" prefWidth="315.0" text="Nome Produto *" />
+                                <Label layoutX="235.0" layoutY="200.0" prefHeight="17.0" prefWidth="154.0" text="Valor de Venda" />
+                                <Label layoutX="404.0" layoutY="200.0" prefHeight="17.0" prefWidth="155.0" text="Estoque Inicial" />
+                                <TextField fx:id="InputEstoqueInicial" layoutX="401.0" layoutY="217.0" prefHeight="25.0" prefWidth="160.0" />
+                                <Button fx:id="btnCancelar" layoutX="427.0" layoutY="276.0" mnemonicParsing="false" onAction="#cancelarOperacao" prefHeight="25.0" prefWidth="135.0" text="Cancelar" />
+                                <Label fx:id="labelObrigacaoNomeProduto" layoutX="233.0" layoutY="177.0" prefHeight="21.0" prefWidth="327.0" text="Campo Obrigatório." textFill="RED" />
+                                <Label fx:id="labelObrigacaoValorDeVenda" layoutX="233.0" layoutY="244.0" prefHeight="22.0" prefWidth="153.0" text="Campo Obrigatório." textFill="RED" />
+                                <Label fx:id="labelObrigacaoEstoqueInicial" layoutX="401.0" layoutY="244.0" prefHeight="23.0" prefWidth="157.0" text="Campo Obrigatório." textFill="#f40000" />
+                            </children>
+                        </Pane>
+                    </children>
+                </StackPane>
+            </center>
+        </BorderPane>
+        <Pane prefHeight="78.0" prefWidth="900.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+    </children>
+</AnchorPane>
